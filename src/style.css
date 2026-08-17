@@ -63,9 +63,14 @@ dialog::backdrop {
     border-radius: 4px;
 }
 
+
+
+
 .filter-title {
     font-size: 20px;
 }
+
+
 
 .categorais-grup {
     list-style: none;
@@ -75,6 +80,6 @@ dialog::backdrop {
     /* saca la sangría izquierda del ul */
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     /* si no entran, bajan de línea */
 }
