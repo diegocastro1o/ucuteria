@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+  </head>
+  <body>
+      <div class="background">
+        <div class="modal">
+          <form>
+            <h2>Checkout</h2>
+            <hr>
+            <fieldset class="container datos-personales">
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" placeholder="Diego Castro">
+
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="example@gmail.com">
+
+              <br>
+              <label for="tel">Teléfono:</label>
+              <input type="tel" id="tel" pattern="^(09[1-9]\d{6}|[24]\d{7})$" placeholder="099123456">
+
+              <br>
+              <label for="dir">Dirección:</label>
+              <input type="text" id="dir" placeholder="Av. 8 de Octubre 1234">
+            </fieldset>
+            <hr>
+            <fieldset class="container metodos-pago">
+              <p>Método de Pago:</p>
+
+              <input type="radio" name="pago" id="tarjeta" value="tarjeta">
+              <label for="tarjeta">Tarjeta</label>
+
+              <input type="radio" name="pago" id="efectivo" value="efectivo">
+              <label for="efectivo">Efectivo</label>
+
+              <input type="radio" name="pago" id="transferencia" value="transferencia">
+              <label for="transferencia">Transferencia</label>
+            </fieldset>
+            <hr>
+            <input id="check" type="checkbox">
+            <label for="check">Acepto Términos y Condiciones</label>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
