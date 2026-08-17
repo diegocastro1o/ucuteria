@@ -1,6 +1,8 @@
 .lista {
     display: grid;
     gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    /* base: móvil */
 }
 
 .producto {
@@ -45,20 +47,89 @@
     cursor: pointer;
 }
 
-@media (max-width: 480px) {
-    .lista {
-        grid-template-columns: 1fr;
-    }
+body {
+    background-color: rgb(253, 243, 231);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-    .lista {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* logo a la izq, nav a la der */
+    gap: 20px;
+    padding: 20px 20px;
 }
 
-@media (min-width: 769px) {
-    .lista {
-        grid-template-columns: repeat(4, 1fr);
-    }
+dialog {
+    border: 0;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+}
+
+dialog::backdrop {
+    /* el fondo oscuro detrás */
+    background: rgba(0, 0, 0, .5);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font: 800 28px system-ui, sans-serif;
+    color: #2E1B10;
+    text-decoration: none;
+}
+
+.logo .material-symbols-outlined {
+    font-size: 34px;
+    color: #7A4A20;
+}
+
+.logo span:last-child {
+    font-weight: 600;
+    color: #7A4A20;
+}
+
+.header-logo .material-symbols-outlined {
+    font-size: 35px;
+}
+
+.btn-logo {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.btn-logo:focus-visible {
+    outline: 2px solid #7A4A20;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+
+
+.filter-title {
+    font-size: 20px;
+}
+
+
+
+.categorais-grup {
+    list-style: none;
+    /* saca los puntos */
+    margin: 0;
+    padding: 0;
+    /* saca la sangría izquierda del ul */
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    /* si no entran, bajan de línea */
+
 }
