@@ -4,8 +4,8 @@
 }
 
 .producto {
+    display: flex;
     align-items: center;
-    flex: content;
     padding: 5%;
     border: solid;
     border-radius: 5%;
