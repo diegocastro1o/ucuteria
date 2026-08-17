@@ -1,8 +1,21 @@
 .lista {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     /* base: móvil */
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .lista {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .producto {
