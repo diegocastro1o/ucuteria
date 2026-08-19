@@ -12,7 +12,7 @@ export const PRODUCTS = [
         name: "Latte",
         price: 180,
         category: "Café",
-        img: "🥛☕",
+        img: "🥛",
         desc: "Con leche espumada.",
     },
     {

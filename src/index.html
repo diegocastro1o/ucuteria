@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!--  Header  -->
     <div class="header">
         <div class="burger">
             <div class="header-logo">
@@ -29,9 +30,9 @@
             </dialog>
         </div>
         <div class="logo">
-            <a class="logo" href="header.html">
+            <a class="logo" href="">
                 <span class="material-symbols-outlined">local_cafe</span>
-                UCU<span>tería</span>
+                <span>UCU<span>tería</span></span>
             </a>
         </div>
         <div class="cart">
@@ -41,57 +42,66 @@
 
         </div>
     </div>
-    <div class="filtro">
-        <div class="buscador">
-            <span class="material-symbols-outlined">search</span>
-            <input type="search" id="buscar" placeholder="Buscar producto...">
-        </div>
-        <div class="categorias">
-            <h3 class="filter-title">Categorias</h3>
-            <ul class="categorais-grup">
-                <li>
-                    <button class="categoria categoria--activa" aria-pressed="true">
-                        <span class="material-symbols-outlined">grid_view</span>
-                        Todas
-                    </button>
-                </li>
-                <li>
-                    <button class="categoria" aria-pressed="false">
-                        <span class="material-symbols-outlined">local_cafe</span>
-                        Café
-                    </button>
-                </li>
-                <li>
-                    <button class="categoria" aria-pressed="false">
-                        <span class="material-symbols-outlined">temp_preferences_eco</span>
-                        Te
-                    </button>
-                </li>
-                <li>
-                    <button class="categoria" aria-pressed="false">
-                        <span class="material-symbols-outlined">cake</span>
-                        Pasteleria
-                    </button>
-                </li>
-                <li>
-                    <button class="categoria" aria-pressed="false">
-                        <span class="material-symbols-outlined">fastfood</span>
-                        Sandwiches
-                    </button>
-                </li>
-            </ul>
-        </div>
-        <div class="ordenarx">
-            <h3 class="filter-title">Ordenar por</h3>
-            <select class="orden" id="orden">
-                <option>Nombre (A–Z)</option>
-                <option>Nombre (Z–A)</option>
-                <option>Precio: menor a mayor</option>
-            </select>
-        </div>
-    </div>
 
-    <div class="lista"></div>
+    <main>
+        <!--  Filtros  -->
+        <section class="filtros">
+            <div class="categorias">
+                <h3 class="filter-title">Categorias</h3>
+                <ul class="lista-categorias">
+                    <li>
+                        <button class="categoria categoria--activa" aria-pressed="true">
+                            <span class="material-symbols-outlined">grid_view</span>
+                            Todas
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categoria" aria-pressed="false">
+                            <span class="material-symbols-outlined">local_cafe</span>
+                            Café
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categoria" aria-pressed="false">
+                            <span class="material-symbols-outlined">temp_preferences_eco</span>
+                            Te
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categoria" aria-pressed="false">
+                            <span class="material-symbols-outlined">cake</span>
+                            Pasteleria
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categoria" aria-pressed="false">
+                            <span class="material-symbols-outlined">fastfood</span>
+                            Sandwiches
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <div class="ordenarx">
+                    <h3 class="filter-title">Ordenar por</h3>
+                    <select class="orden" id="orden">
+                        <option>Nombre (A–Z)</option>
+                        <option>Nombre (Z–A)</option>
+                        <option>Precio: menor a mayor</option>
+                    </select>
+                </div>
+                <div class="buscador">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="search" id="buscar" placeholder="Buscar producto...">
+                </div>
+            </div>
+        </section>
+
+        <section class="list-container">
+            <!--  Lista de los productos  -->
+            <div class="lista"></div>
+        </section>
+    </main>
 </body>
 
 </html>

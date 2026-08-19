@@ -4,18 +4,22 @@ const lista = document.querySelector(".lista");
 
 PRODUCTS.forEach((item) => {
   lista.innerHTML += `
-        <div class="producto">
-            <div class="icono">${item.img}</div>
+        <div class="card">
 
-            <div>
-                <p class="name-prod">${item.name}</p>
-                <p class="desc-prod">${item.desc}</p>
-                <p class="price-prod">$${item.price}</p>
+            <div class="info-prod">
+                <div>
+                  <p class="name-prod no-margin">${item.name}</p>
+                  <p class="desc-prod no-margin">${item.desc}</p>
+                </div>
+                <p class="price-prod no-margin">$${item.price}</p>
             </div>
 
-            <button class="button-add">
-                +
-            </button>
+            <div class="images-prod">
+              <div class="icono">${item.img}</div>
+              <button class="button-add">
+                  +
+              </button>
+            </div>
         </div>
     `;
 });
